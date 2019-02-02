@@ -2,16 +2,17 @@
 
 This is a personal blog
 
+
 ## Project Requirements
 
-Make sure you have **Python3** and **Django** Istalled
+Make sure you have **Python3** and **Django** Installed
 check whether python3 is installed
 
 ```shell
 python3 --version
 ```
 
-check whether django is installed
+check whether Django is installed
 
 ```shell
 python3 -m django --version
@@ -30,19 +31,19 @@ install virtual environment using pip3
 pip3 install pipenv
 ```
 
-Activiate virtual environment
+Activate virtual environment
 
 ```shell
 pipenv shell
 ```
 
-Install django with pipenv
+Install Django with pipenv
 
 ```shell
 pipenv install django
 ```
 
-After you make sure that Python and Django installed, to check the list of availible commends type
+After you make sure that Python and Django installed, to check the list of available commands type
 
 ```shell
 django-admin
@@ -53,3 +54,4 @@ To start a new project
 ```shell
 django-admin startproject blog
 ```
+
