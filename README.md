@@ -4,7 +4,7 @@ This is a personal blog
 
 ## Project Requirements
 
-Make sure you have Python3 and Django Istalled
+Make sure you have **Python3** and **Django** Istalled
 check whether python3 is installed
 
 ```shell
