@@ -22,7 +22,7 @@ python3 -m django --version
 
 Install Python3 from the official website https://www.python.org/downloads/
 
-### Setup Virtual Environment
+## Setup Virtual Environment
 
 install virtual environment using pip3
 
@@ -53,3 +53,12 @@ To start a new project
 ```shell
 django-admin startproject blog
 ```
+
+### Contributors
+
+Amin Abdisamad <theaminux@gmail.com>
+
+### Copyright and License
+
+© AMIN ABDISAMAD, ASAL SOLUTIONS
+licensed under [MIT License](LICENSE)
