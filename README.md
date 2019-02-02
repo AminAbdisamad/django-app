@@ -54,6 +54,16 @@ To start a new project
 django-admin startproject blog
 ```
 
+To run our Django server
+
+## The development server
+
+Let’s verify Our Django project works. Change into the outer mysite directory and run the following commands:
+
+```shell
+python manage.py runserver
+```
+
 ### Contributors
 
 Amin Abdisamad <theaminux@gmail.com>
