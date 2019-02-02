@@ -1,8 +1,8 @@
-## My Blog
+# My Blog
 
 This is a personal blog
 
-### Project Requirements
+## Project Requirements
 
 Make sure you have Python3 and Django Istalled
 check whether python3 is installed
@@ -18,17 +18,16 @@ python3 -m django --version
 
 ```
 
-### Installations
+## Installations
 
-After you make sure that Python and Django Installed type
+After you make sure that Python and Django to see the list of availible commends type
 
-````shell
+```shell
 django-admin
 ```
-to see the list of availible commends.
+
 To start a new project
 
 ```shell
 django-admin startproject blog
 ```
-````
