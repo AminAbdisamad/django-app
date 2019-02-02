@@ -6,7 +6,8 @@ This is a personal blog
 
 Make sure you have Python3 and Django Istalled
 
-```shell python3 --version
+```shell
+    python3 --version
     python3 -m django --version
 ```
 
