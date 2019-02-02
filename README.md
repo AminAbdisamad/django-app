@@ -74,6 +74,8 @@ Each application you write in Django consists of a Python package that follows a
 > particular website. A project can contain multiple apps. An app can be in
 > multiple projects.
 
+To create your app, make sure you’re in the same directory as manage.py and type this command:
+
 ```shell
 python manage.py startapp pages
 ```
