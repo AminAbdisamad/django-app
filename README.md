@@ -20,6 +20,28 @@ python3 -m django --version
 
 ## Installations
 
+Install Python3 from the official website https://www.python.org/downloads/
+
+### Setup Virtual Environment
+
+install virtual environment using pip3
+
+```shell
+pip3 install pipenv
+```
+
+Activiate virtual environment
+
+```shell
+pipenv shell
+```
+
+Install django with pipenv
+
+```shell
+pipenv install django
+```
+
 After you make sure that Python and Django installed, to check the list of availible commends type
 
 ```shell
