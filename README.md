@@ -20,7 +20,7 @@ python3 -m django --version
 
 ## Installations
 
-After you make sure that Python and Django to see the list of availible commends type
+After you make sure that Python and Django installed, to check the list of availible commends type
 
 ```shell
 django-admin
