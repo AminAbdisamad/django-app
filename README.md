@@ -2,7 +2,6 @@
 
 This is a personal blog
 
-
 ## Project Requirements
 
 Make sure you have **Python3** and **Django** Installed
@@ -55,7 +54,6 @@ To start a new project
 django-admin startproject blog
 ```
 
-<<<<<<< HEAD
 ### Contributors
 
 Amin Abdisamad <theaminux@gmail.com>
@@ -64,5 +62,3 @@ Amin Abdisamad <theaminux@gmail.com>
 
 © AMIN ABDISAMAD, ASAL SOLUTIONS
 licensed under [MIT License](LICENSE)
-=======
->>>>>>> 38efc00ed5d5dad106f4213fe6f8e80001e180e7
