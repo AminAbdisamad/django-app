@@ -1,17 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home page</title>
-  </head>
-  <body>
-    <h1>Welcome to my website</h1>
-    {% for post in posts%}
-    <h2>{{post.title}}</h2>
-    <em>posted by {{post.author}} on {{post.date}}</em>
-    <p>{{post.body}}</p>
-    {% endfor %}
-  </body>
-</html>
+{% extends 'pages/base.html' %} {% block content %} {% for post in posts%}
+
+<div class="facebook-box">
+  <div class="content">
+    <div class="right-icon">
+      <i class="material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="row header">
+      <div class="avatar">
+        <img src="http://placehold.it/40x40" alt="" />
+      </div>
+      <div class="name">
+        <h5>
+          <a href="http://khoipro.com" target="_blank">{{ post.author }}</a>
+        </h5>
+        <span class="sub">10 October 2015 at 15:00</span>
+      </div>
+    </div>
+    <div class="row text">
+      Sed tristique dapibus velit. Sed at mauris porttitor, aliquam erat eu,
+      mollis quam. Morbi sit amet dignissim turpis. Proin sed dui nisl. Quisque
+      lorem risus, cursus eget metus nec, lobortis varius massa.
+    </div>
+    <div class="row thumbnail">
+      <img src="http://placehold.it/600x350" alt="" />
+    </div>
+    <hr />
+  </div>
+  <div class="footer">
+    <a href="#">6 people</a> like this.
+    <div class="row">
+      <div class="small-avatar">
+        <img src="http://placehold.it/32x32" alt="" />
+      </div>
+      <div class="write-comment">
+        <input type="text" placeholder="Write your comment..." />
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endfor %} {% endblock content %}

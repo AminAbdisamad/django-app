@@ -80,6 +80,26 @@ To create your app, make sure you’re in the same directory as manage.py and ty
 python manage.py startapp pages
 ```
 
+#### Create Migrations
+
+Database migrations allows us to apply some changes to the database
+
+```shell
+python manage.py makemigrations
+```
+
+This command will create database and add some tables to it
+
+```shell
+python manage.py migrate
+```
+
+Now our database and tables are ready so we can create a new user
+
+```shell
+python manage.py createsuperuser
+```
+
 ### Contributors
 
 Amin Abdisamad <theaminux@gmail.com>
