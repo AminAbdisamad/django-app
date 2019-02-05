@@ -100,6 +100,23 @@ Now our database and tables are ready so we can create a new user
 python manage.py createsuperuser
 ```
 
+after creating and migrating models into the database, to view tables that are in the database (find the app name and migration number) run this command
+
+```shell
+python manage.py sqlmigrate pages 0001
+```
+
+```database
+BEGIN;
+--
+-- Create model Post
+--
+CREATE TABLE "pages_post" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(200) NOT NULL, "content" text NOT NULL, "date_pos
+ted" datetime NOT NULL, "author_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED);
+CREATE INDEX "pages_post_author_id_c4673f6e" ON "pages_post" ("author_id");
+COMMIT;
+```
+
 ### Contributors
 
 Amin Abdisamad <theaminux@gmail.com>
