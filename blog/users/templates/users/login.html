@@ -1,0 +1,59 @@
+{% extends 'users/base.html' %} {% block content %}
+<div class="page-container">
+  <div class="left-side">
+    <p></p>
+    <div class="left-text">
+      <span class="big-text">ShareIdea</span
+      ><span class="small-text"
+        >Where Network Engineers Meet & share ideas</span
+      >
+    </div>
+  </div>
+  <div class="right-side">
+    <!-- Login Form -->
+    <div id="login" class="container-form">
+      <span class="user-area">Sign In</span>
+      <form action="#" class="form" method="post">
+        <input type="text" placeholder="User Name Or Email" />
+        <input type="password" placeholder="Password" />
+        <span class="text-tinny"
+          >This page is protected by reCAPTCHA, and subject to the Google
+          <a href="https://www.google.com/policies/privacy/">Privacy Policy</a>
+          and
+          <a href="https://www.google.com/policies/terms/">Terms of service</a
+          >.</span
+        >
+        <button class="btnn btn-login" name="submit">Login</button>
+        <a href="#" class="links forget">Forget Password</a>
+        <a id="create-AccountLink" class="links create">Create New Account</a>
+      </form>
+    </div>
+    <!-- Sign Up Form -->
+    <div id="create-account" class="container-form">
+      <span class="user-area"
+        >Create Account
+        <span class="text-tinny"
+          >or
+          <a id="login-Link" class="links">sign in to your account </a></span
+        ></span
+      >
+      <form action="#" class="form" method="post">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="UserName" />
+        <input type="text" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <span class="text-tinny"
+          >This page is protected by reCAPTCHA, and subject to the Google
+          <a href="https://www.google.com/policies/privacy/">Privacy Policy</a>
+          and
+          <a href="https://www.google.com/policies/terms/">Terms of service</a
+          >.</span
+        >
+        <button class="btn btn-login" name="submit">Create</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
