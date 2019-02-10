@@ -137,7 +137,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Crispy forms uses bootsrap 2.0 by default however, we want to use materializecss
+Crispy forms use bootsrap 2.0 by default however, we want to use materializecss
 
 ```script
 CRISPY_TEMPLATE_PACK = 'materializecss'
