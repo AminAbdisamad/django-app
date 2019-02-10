@@ -117,6 +117,28 @@ CREATE INDEX "pages_post_author_id_c4673f6e" ON "pages_post" ("author_id");
 COMMIT;
 ```
 
+### Styling Django Forms with crispy froms
+
+Crispy forms will allow us to put simple tags in our template that will style our form in bootstrap fashion or any other CSS framework.
+
+```script
+pipenv install django-cripy-forms
+```
+
+after we install we need to tell django this is an installed app ,and we can do that in our project setting
+
+```script
+INSTALLED_APPS = [
+   'crispy_forms'
+]
+```
+
+Crispy forms uses bootsrap 2.0 by default howver, we want to use bootsrap 4.0 or materialzecss we will tell which css framework we are using
+
+```script
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+```
+
 ### Contributors
 
 Amin Abdisamad <theaminux@gmail.com>
