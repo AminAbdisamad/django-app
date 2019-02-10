@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 pylint-django = "*"
+crispy-forms-materialize = "*"
 
 [dev-packages]
 "pep8" = "*"
