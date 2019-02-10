@@ -1,4 +1,5 @@
 {% extends 'users/base.html' %}
+{% load crispy_forms_tags %}
  {% block content %}
 <div class="page-container">
   <div class="left-side">
@@ -11,7 +12,7 @@
     </div>
   </div>
   <div class="right-side">
-    <!-- Flash Messages -->
+    <!-- Flash Messages for user registration -->
     {% if messages %} 
       {% for message in messages %}
         <div class="alert-{{ message.tags }}">{{message}}</div>
@@ -21,9 +22,11 @@
     <!-- Login Form -->
     <div id="login" class="container-form">
       <span class="user-area">Sign In</span>
-      <form action="#" class="form" method="post">
-        <input type="text" placeholder="User Name Or Email" />
-        <input type="password" placeholder="Password" />
+      <form action="#" class="form" method="POST">
+          {% csrf_token %}
+        {{ form|crispy }}
+        {% comment %} <input type="text" placeholder="User Name Or Email" />
+        <input type="password" placeholder="Password" /> {% endcomment %}
         <span class="text-tinny"
           >This page is protected by reCAPTCHA, and subject to the Google
           <a href="https://www.google.com/policies/privacy/">Privacy Policy</a>

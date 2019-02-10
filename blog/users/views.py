@@ -23,8 +23,9 @@ def register(request):
 
 def login(request):
     return render(request, 'users/login.html')
-# different flash messages
 
+
+# different flash messages
 # message.debug
 # message.info
 # message.success
