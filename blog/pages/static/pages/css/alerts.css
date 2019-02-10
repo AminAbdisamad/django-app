@@ -1,0 +1,32 @@
+.alert-success {
+  padding: 10px;
+  background: rgb(152, 192, 152);
+  color: green;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 20px 5px 5px 5px;
+}
+.alert-info {
+  padding: 10px;
+  background: rgb(59, 130, 196);
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 20px 5px 5px 5px;
+}
+.alert-danger {
+  padding: 10px;
+  background: rgb(248, 74, 74);
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 20px 5px 5px 5px;
+}
+.alert-warning {
+  padding: 10px;
+  background: yellow;
+  color: grey;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 20px 5px 5px 5px;
+}

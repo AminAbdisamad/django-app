@@ -1,0 +1,52 @@
+{% extends 'users/base.html' %} 
+{% block content %}
+<div class="page-container">
+  <div class="left-side">
+    <p></p>
+    <div class="left-text">
+      <span class="big-text">ShareIdea</span
+      ><span class="small-text"
+        >Where Network Engineers Meet & share ideas</span
+      >
+    </div>
+  </div>
+  <div class="right-side">
+    <!-- Flash Messages -->
+    {% comment %} {% if messages%} 
+    {% for message in messages %} 
+  <div class="alert-{{message.tags}}">message</div>
+    {% endfor %}
+    {% endif %} {% endcomment %}
+  
+ 
+    <!-- Sign Up Form -->
+    <div id="create-account" class="container-form">
+      <span class="user-area"
+        >Create Account
+        <span class="text-tinny"
+          >or
+          <a href = "{% url 'user-login' %}" id="login-Link" class="links">sign in to your account </a></span
+        ></span
+      >
+      <form  class="form" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <!-- <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="UserName" />
+        <input type="text" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <span class="text-tinny"
+          >This page is protected by reCAPTCHA, and subject to the Google
+          <a href="https://www.google.com/policies/privacy/">Privacy Policy</a>
+          and
+          <a href="https://www.google.com/policies/terms/">Terms of service</a
+          >.</span
+        > -->
+        <button class="btnn btn-login" name="submit">Create</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
