@@ -1,0 +1,11 @@
+{% extends 'users/base.html' %} {% block content %}
+
+<!-- Login Form -->
+<div id="login" class="container-form">
+  <h2>You've sucessfully logout</h2>
+  <a href="{% url 'login' %}" id="create-AccountLink" class="links create"
+    >Login Again</a
+  >
+</div>
+
+{% endblock content %}
