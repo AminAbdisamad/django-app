@@ -18,17 +18,17 @@
 
     <link rel="stylesheet" href="{% static 'pages/css/main.css' %}" />
     {% if title%}
-    <title>Personal Blog - {{ title }}</title>
+    <title>ShareIdea - {{ title }}</title>
     {% else %}
-    <title>Personal Blog</title>
+    <title>ShareIdea</title>
     {% endif%}
   </head>
   <body>
     <!-- Navigations -->
-    <nav class="z-depth-1">
+    <nav class="z-depth-0">
       <div class="nav-wrapper blue darken-1  ">
         <div class="container ">
-          <a href="#" class="brand-logo">ShareIdea</a>
+          <a href="{% url 'home-page' %}" class="brand-logo">ShareIdea</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="# ">About</a></li>
             <li><a href="#">How it Works</a></li>
