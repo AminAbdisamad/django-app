@@ -30,9 +30,19 @@
         <div class="container ">
           <a href="#" class="brand-logo">Logo</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html ">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="# ">About</a></li>
+            <li><a href="#">How it Works</a></li>
+            <!-- It should Only shown if the user is logged in -->
+            {% if user.is_authenticated %}
+            <li>
+              <a href="#">{{ user.username }}</a>
+            </li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+            <!-- It should only shown if the user is not login -->
+            <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
           </ul>
         </div>
       </div>

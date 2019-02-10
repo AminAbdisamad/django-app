@@ -1,11 +1,24 @@
 {% extends 'users/base.html' %} {% block content %}
+<div class="page-container">
+  <div class="left-side">
+    <p></p>
+    <div class="left-text">
+      <span class="big-text">ShareIdea</span
+      ><span class="small-text"
+        >Where Network Engineers Meet & share ideas</span
+      >
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="alert-info">You've successfully Logout</div>
 
-<!-- Login Form -->
-<div id="login" class="container-form">
-  <h2>You've sucessfully logout</h2>
-  <a href="{% url 'login' %}" id="create-AccountLink" class="links create"
-    >Login Again</a
-  >
+    <!-- logout Form -->
+    <div id="login" class="container-form">
+      <a href="{% url 'login' %}" id="create-AccountLink" class="links create"
+        >Login Again</a
+      >
+    </div>
+  </div>
+
+  {% endblock content %}
 </div>
-
-{% endblock content %}
