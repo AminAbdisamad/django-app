@@ -25,17 +25,17 @@
   </head>
   <body>
     <!-- Navigations -->
-    <nav class="z-depth-0">
+    <nav class="z-depth-1">
       <div class="nav-wrapper blue darken-1  ">
         <div class="container ">
-          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" class="brand-logo">ShareIdea</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="# ">About</a></li>
             <li><a href="#">How it Works</a></li>
             <!-- It should Only shown if the user is logged in -->
             {% if user.is_authenticated %}
             <li>
-              <a href="#">{{ user.username }}</a>
+              <a href="{% url 'profile' %}">{{ user.username }}</a>
             </li>
             <li><a href="{% url 'logout' %}">Logout</a></li>
             {% else %}

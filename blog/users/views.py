@@ -1,8 +1,10 @@
 # render and redirect are in django.shortcuts module
 from django.shortcuts import render, redirect
-from django.contrib import messages
-from .forms import UserRegistrationForm
 # For flash messages
+from django.contrib import messages
+# login required decorators
+from django.contrib.auth.decorators import login_required
+from .forms import UserRegistrationForm
 
 
 def register(request):
@@ -24,7 +26,11 @@ def register(request):
 def login(request):
     return render(request, 'users/login.html')
 
-
+# After we set login_required it'll automatically redirect to account/login
+#  so we'll change the URL in the setting eg (LOGIN_URL = 'login')
+@login_required
+def profile(request):
+    return render(request, 'users/profile.html')
 # different flash messages
 # message.debug
 # message.info

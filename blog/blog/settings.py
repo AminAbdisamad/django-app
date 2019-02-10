@@ -125,3 +125,4 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'materialize_css_forms'
 # redirecting login
 LOGIN_REDIRECT_URL = 'home-page'
+LOGIN_URL = 'login'
